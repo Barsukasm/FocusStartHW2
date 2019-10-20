@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>1</title>
+		<style>
+			.wrapper{
+				overflow: hidden;
+			}
+			
+			.wrapper::after{
+				content: "";
+				clear: both;
+				display: block;
+			}
+		
+			.blue{
+				float: left;
+				width: 200px;
+				height: 500px;
+				background-color: blue;
+				padding-bottom: 200000px;
+				margin-bottom: -200000px;
+			}
+			
+			.green{
+				float: right;
+				background-color: green;
+				width: calc(100% - 205px);
+				height: 500px;
+				padding-bottom: 200000px;
+				margin-bottom: -200000px;
+			}			
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="blue"></div>
+			<div class="green"></div>
+		</div>
+	</body>
+</html>
